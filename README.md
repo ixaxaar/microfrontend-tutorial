@@ -41,10 +41,6 @@ SPAs are generally a single frontend project with backends which may range from 
 - No clear Ownership in cases of multiple products involvement
 - Conflicting priorities
 
-In Setu, we have a central payments console at present (bridge) which is maintained by the collect team. In order to build more consoles per product, we need a framework in which teams can work on their project with minimum obstacles. Added to this, the requirement of a central account experience makes things more complicated. This creates a need for adding a layer of abstraction for an ecosystem for multiple projects to coexist.
-
-In the past we would have approached those problems by dividing parts of our application in a shared components library, abstracting some business logic in other libraries so they could be reused across different parts of the application.
-
 # Microfrontends
 
 Micro-frontends are an emerging architecture inspired by microservices architecture.
@@ -154,7 +150,7 @@ There are multiple ways of communication between multiple microfrontends. Their 
 
 1. Deciding the split
 
-We choose the vertical split scenario where it serves Setu's usecase of supporting 4 classes of components:
+We choose the vertical split scenario for supporting 4 classes of components:
 
 1. Core components
    1. Each product e.g. bridge, bbps, dg, fd etc
